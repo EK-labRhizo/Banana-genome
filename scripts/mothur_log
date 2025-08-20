@@ -1,0 +1,6 @@
+make.shared(count=tot_bac_root_ASV.tsv, label=ASV)
+summary.single(shared=current, calc=nseqs-coverage-sobs-invsimpson-simpsoneven-npshannon-chao, subsample=T)
+rarefaction.single(shared=current)
+make.shared(count=tot_fung_root_ASV.tsv, label=ASV)
+summary.single(shared=current, calc=nseqs-coverage-sobs-invsimpson-simpsoneven-npshannon-chao, subsample=T)
+rarefaction.single(shared=current)
